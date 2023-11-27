@@ -1,0 +1,20 @@
+- hosts: all
+  become: true
+
+  tasks:
+    - name: Stop a container
+      docker_container:
+        name: docker1
+        state: stopped
+    - name: Stop a container
+      docker_container:
+        name: docker2
+        state: stopped
+    - name: Stop a container
+      docker_container:
+        name: docker3
+        state: stopped
+    - name: Stop a container
+      docker_container:
+        name: docker4
+        state: stopped

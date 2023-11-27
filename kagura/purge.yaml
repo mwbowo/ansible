@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: Create Docker Container
+      community.docker.docker_container:
+        name: docker1
+        image: ubuntu
+        state: started
+        purge_networks: true
+        deprecation_warnings=False
