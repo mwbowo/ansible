@@ -1,8 +1,0 @@
-- hosts: all
-  become: true
-
-  tasks:
-    - name: Reboot the machine
-      reboot: 
-        reboot_timeout: 300
-        test_command: uptime
