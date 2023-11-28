@@ -3,7 +3,4 @@
 
   tasks:
     - name: Cron Clear RAM
-      ansible.builtin.cron: 
-        name: Clear RAM VM Zabbix
-        state: present 
-        job: "kagura/cron/clear-ram.sh"
+      command: kagura/cron/clear-ram.sh
