@@ -2,6 +2,11 @@
   become: true
 
   tasks:
+    - name: CP File clear-ram.sh 
+      copy:
+        src: /ansible/kagura/cron/clear-ram.sh
+        dest: /home/vaf/clear-ram.sh
+        mode: 755
 
     - name: CLear RAM
       command: sh /home/vaf/clear-ram.sh
