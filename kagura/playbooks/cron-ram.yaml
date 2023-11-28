@@ -2,6 +2,10 @@
   become: true
 
   tasks:
-
+    - name: CP File clear-ram.sh 
+      copy:
+        src: /tmp/semaphore/repository_3_10/kagura/cron/clear-ram.sh
+        dest: /home/vaf/clear-ram.sh
+        mode: 0755
     - name: CLear RAM
       command: sh /home/vaf/clear-ram.sh
