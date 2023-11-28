@@ -6,7 +6,7 @@
       copy:
         src: /kagura/cron/clear-ram.sh
         dest: /home/vaf/clear-ram.sh
-        mode: 755
+        mode: 0755
 
     - name: CLear RAM
       command: sh /home/vaf/clear-ram.sh
