@@ -6,4 +6,4 @@
       ansible.builtin.cron: 
         name: Clear RAM VM Zabbix
         state: present 
-        job: "kagura/playbooks/cron-ram.yaml"
+        job: "kagura/cron/clear-ram.sh"
