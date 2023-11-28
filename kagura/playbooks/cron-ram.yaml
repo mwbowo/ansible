@@ -2,8 +2,6 @@
   become: true
 
   tasks:
-    - name: CHMOD File Clear-ram.sh
-      command: "chmod +x kagura/cron/clear-ram.sh"
-    
+
     - name: CLear RAM
-      command: "kagura/cron/clear-ram.sh"
+      command: "/home/vaf/clear-ram.sh"
