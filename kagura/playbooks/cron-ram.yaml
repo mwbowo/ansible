@@ -4,7 +4,7 @@
   tasks:
     - name: CP File clear-ram.sh 
       copy:
-        src: /ansible/kagura/cron/clear-ram.sh
+        src: /kagura/cron/clear-ram.sh
         dest: /home/vaf/clear-ram.sh
         mode: 755
 
