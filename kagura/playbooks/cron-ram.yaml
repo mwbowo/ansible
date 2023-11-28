@@ -2,7 +2,8 @@
   become: true
 
   tasks:
-    - name: Cron Clear RAM
-      command: 
-        - chmod +x clear-ram.sh
-        - kagura/cron/clear-ram.sh
+    - name: CHMOD File Clear-ram.sh
+      command: "chmod +x clear-ram.sh"
+    
+    - name: CLear RAM
+      command: "kagura/cron/clear-ram.sh"
