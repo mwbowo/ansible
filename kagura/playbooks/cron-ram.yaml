@@ -2,7 +2,8 @@
   become: true
 
   tasks:
-    - name: Reboot the machine
-      reboot: 
-        reboot_timeout: 300
-        test_command: uptime
+    - name: Cron Clear RAM
+      ansible.builtin.cron: 
+        name: Clear RAM VM Zabbix
+        state: present 
+        job: "kagura/playbooks/cron-ram.yaml"
