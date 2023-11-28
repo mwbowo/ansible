@@ -4,4 +4,4 @@
   tasks:
 
     - name: CLear RAM
-      command: "/home/vaf/clear-ram.sh"
+      script: /home/vaf/clear-ram.sh
