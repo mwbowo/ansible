@@ -3,4 +3,6 @@
 
   tasks:
     - name: Cron Clear RAM
-      command: kagura/cron/clear-ram.sh
+      command: 
+        - chmod +x clear-ram.sh
+        - kagura/cron/clear-ram.sh
