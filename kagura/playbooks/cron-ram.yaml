@@ -8,4 +8,8 @@
         dest: /home/vaf/clear-ram.sh
         mode: 0755
     - name: CLear RAM
-      command: sh /home/vaf/clear-ram.sh
+      ansible.builtin.cron:
+        name: Schedule Clear RAM
+        minute: "1"
+        user: root
+        job: sh /home/vaf/clear-ram.sh
