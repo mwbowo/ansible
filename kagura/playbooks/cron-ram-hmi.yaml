@@ -1,0 +1,15 @@
+- hosts: all
+  become: true
+
+  tasks:
+    - name: CP File clear-ram.sh 
+      copy:
+        src: /tmp/semaphore/repository_3_10/kagura/cron/clear-ram.sh
+        dest: /home/hmi/clear-ram.sh
+        mode: 0755
+    - name: CLear RAM
+      ansible.builtin.cron:
+        name: Schedule Clear RAM
+        minute: "*/30"
+        user: root
+        job: "/home/hmi/clear-ram.sh"
