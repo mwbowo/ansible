@@ -4,7 +4,7 @@
   tasks:
     - name: CP File clear-ram.sh 
       copy:
-        src: /tmp/semaphore/repository_3_10/kagura/cron/clear-ram.sh
+        src: /tmp/semaphore/repository_1_1/kagura/cron/clear-ram.sh
         dest: /home/hmi/clear-ram.sh
         mode: 0755
     - name: CLear RAM
