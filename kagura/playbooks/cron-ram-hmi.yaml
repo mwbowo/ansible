@@ -10,6 +10,6 @@
     - name: CLear RAM
       ansible.builtin.cron:
         name: Schedule Clear RAM
-        minute: "*/30"
+        minute: "*/60"
         user: root
         job: "/home/hmi/clear-ram.sh"
